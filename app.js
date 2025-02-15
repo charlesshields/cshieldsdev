@@ -1,17 +1,13 @@
-const express = require('express');
-const server = require('http').createServer();
-const app = express();
+const http = require("http");
 
-app.get('/', function(req, res) {
-	res.sendFile('index.html', {root: __dirname});
-});
+http.createServer(function (req, res) {
+	res.write("On the way to being a full stack engineer!");
 
-server.on('request', app);
-server.listen(3000, function () { console.log('listening on port 3000'); });
+	res.write("I love you Mona! I made this website from the ground up!")
 
 
-process.on('SIGINT', () => {
-	console.log('sigint')
+	res.end();
+}).listen(3000);
 	wss.clients.forEach(function each(client) {
 		client.close();
 	});
