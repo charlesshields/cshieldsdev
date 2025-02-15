@@ -3,19 +3,12 @@
 
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" type="text/css" href="dep/normalize.css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="dep/Font-Awesome/css/font-awesome.css" />
+    
     <link rel="stylesheet" type="text/css" href="style.css" />
 
    
 
-    <script = src="app.js">
-        let ws;
-        const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
-        ws = new WebSocket(`${proto}://${window.location.host}`);
-
-        ws.onmessage = (event) => {console.log(event.data)};
-    </script>
+    
   </head>
   <body lang="en">
     <section id="main">
@@ -251,6 +244,14 @@
       </div>
     </aside>
   </body>
+
+  <script type = "text/javascript" src="app.js">
+        let ws;
+        const proto = window.location.protocol === 'https:' ? 'wss' : 'ws';
+        ws = new WebSocket(`${proto}://${window.location.host}`);
+
+        ws.onmessage = (event) => {console.log(event.data)};
+    </script>
 
 </html>
 
