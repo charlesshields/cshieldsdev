@@ -1,397 +1,171 @@
-body,
-html {
-  margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Source Sans Pro",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 100%;
-  color: #000;
-}
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-* {
-  box-sizing: border-box;
-  /* border: dashed 1px red; */
-}
-
-/* Links */
-a {
-  text-decoration: none !important;
-  color: #3173bb !important;
-}
-
-strong {
-  color: #333;
-}
-
-.container {
-  padding: 10px 15px;
-  margin: 0 auto;
-  max-width: 55rem;
-  background-color: #fff;
-}
-
-.link-title {
-  letter-spacing: 1px;
-  color: #444;
-}
-
-.header {
-  text-align: center;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-}
-
-.header-title {
-  font-size: 2.4rem;
-  font-weight: 300;
-  letter-spacing: 0.4rem;
-  text-transform: uppercase;
-}
-
-.header-sub-title {
-  font-weight: 400;
-  color: #757575;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.contact-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  color: #3173bb;
-  padding: 0.4rem 0.6rem;
-}
-
-.contact-logo {
-  color: #3173bb;
-}
-
-.contact-info {
-  padding-left: 0.4rem;
-}
-
-.info-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.info-left {
-  flex: 1;
-  border-right: 2px solid #f5f5f5;
-  padding-right: 1rem;
-}
-
-.info-right {
-  flex: 3;
-  padding-left: 1rem;
-}
-
-.info-row {
-  width: 100%;
-}
-
-.cat-header {
-  padding: 0.5rem 0;
-  font-size: 1.1rem;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.cat-indicator {
-  color: #3173bb;
-  width: 1.6rem;
-  text-align: center;
-}
-
-.cat-title {
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  vertical-align: text-bottom;
-  margin-left: 0.4rem;
-  color: #666;
-}
-
-.cat-def-body,
-.cat-skill-body {
-  padding: 0.2rem 0px 0.7rem 1.7rem;
-}
-
-/* Lists */
-.cat-list-body {
-  padding-bottom: 1rem;
-}
-.cat-list {
-  padding-left: 2rem;
+body {
   margin: 0;
-  list-style-type: disc;
-  text-align: justify;
+  font-family: 'Raleway';
+  font-size: 16px;
+  line-height: 1.8em;
 }
 
-.cat-list-item {
-  padding: 0.4rem 0;
-  padding-left: 0.6rem;
-  text-align: justify;
+a {
+  color: #1C9C94;
+  text-decoration: none;
 }
 
-/* Education */
-.edu-header,
-.project-header {
+a:hover {
+  opacity: 0.5;
+}
+
+article {
+  padding:0 1em;
+}
+
+section{
+  margin: 1em;
+  padding: 1em;
+}
+
+header, main, footer {
+  margin: 0 auto;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+  
+  background-size: cover;
+  background-position: fixed;
+  color: white;
+}
+
+header section {
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+header img {
+  border-radius: 50%;
+  max-width: 150px;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin: 1em 0;
+}
+
+h3 {
+  text-transform: uppercase;
+}
+
+h3, h4 {
+  font-weight: bold;
+}
+
+main {
+  max-width: 1140px;
+}
+
+main section:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.fab {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 1.5em;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  margin: 5px;
+  text-align: center;
+}
+
+a .fab {
+  color: white;
+}
+
+.course, .skills {
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-}
-
-.edu-alma,
-.project-title,
-.skill-title {
-  font-weight: 600;
-  letter-spacing: 1px;
-  padding-right: 60px;
-}
-
-.edu-duration,
-.project-duration {
-  color: #666;
-  font-style: italic;
-}
-
-.edu-class-data {
-  margin-top: 5px;
-}
-
-.edu-std {
-  letter-spacing: 0.1rem;
-  color: #666;
-}
-
-.edu-score {
-  margin-left: 20px;
-  padding: 2px 8px;
-  background-color: #3173bb;
-  color: #fff;
-  border-radius: 20px;
-}
-
-/* Project */
-.project-title {
-  padding-right: 5px;
-}
-
-.project-desc {
-  color: #444;
-  text-align: justify;
-  padding-bottom: 0.4rem;
-}
-
-/* Skills */
-.cat-skill-item {
-  padding: 0.2rem 0 !important;
-  line-height: 1.2rem;
-}
-
-.cat-skill-type {
-  /* text-transform: uppercase; */
-  font-weight: 600;
-  /* letter-spacing: 1px; */
-  /* padding: 5px 0; */
-}
-
-.force-inline {
-  display: inline-block !important;
-}
-
-.cat-skill-body {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5px 0px;
-}
-
-.skill {
-  margin: 10px 0;
-  padding: 0 10px;
-}
-
-.skill-gen {
-  display: inline;
-  padding: 5px 10px;
-  margin: 3px 6px;
-  margin-left: 0;
-  background-color: #3173bb;
-  color: #fff;
-  border-radius: 3rem;
-  font-size: 0.9rem;
-}
-
-.skill-progress-track {
-  height: 10px;
-  min-width: 150px;
-  background-color: #eee;
-  margin-top: 6px;
-  border-radius: 6px;
-}
-
-.skill-progress {
-  height: 100%;
-  background-color: #3173bb;
-  border-radius: 6px;
-}
-
-.pad-bottom-extra {
-  padding-bottom: 20px;
-}
-
-.ach-item {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.exp-item {
-  display: inline-flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
-.exp-org {
-  font-weight: 600;
-  letter-spacing: 1px;
-  color: #444;
+.course .title {
+  color: #509e98;
+  -ms-flex: 0 0 33.3%;
+  flex: 0 0 33.3%;
+  max-width: 33%;
 }
 
-.exp-title {
-  color: #666;
+.course .descrition {
+  -ms-flex: 0 0 66.6%;
+  flex: 0 0 66.6%;
+  max-width: 66.6%;
 }
 
-.ach-title {
-  width: 75%;
-  color: #444;
+.course .descrition p {
+  padding-left: 1em;
 }
 
-.ach-duration {
-  color: #666;
-  font-style: italic;
-  width: 15%;
-  text-align: right;
+.skills .column {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
 }
 
-.expDet {
-  list-style-type: disc !important;
-  color: #444;
-  padding: 4px 0 4px 16px;
+.skills .column ul, ul.job-description {
+  list-style-type: none;
 }
 
-.expDet > li {
-  padding-bottom: 0.4rem !important;
-  padding-left: 0.3rem !important;
-  text-align: justify;
-  list-style: circle;
+.skills .column ul > li:before {
+  content: "►";
+  padding-right: 0.5em;
+  color: #509e98;
 }
 
-/* Media wuery for mobile view */
-@media screen and (max-width: 500px) {
-  .profile-logo {
-    margin: 0 auto;
+.school, .job-title {
+  text-transform: capitalize;
+}
+
+.school span, .job-title span {
+  color: #889499;
+  text-decoration: underline;
+}
+
+ul.job-description li:before{
+  content: "✔";
+  padding-right: 0.5em;
+  color: #509e98;
+}
+
+footer {
+ padding: 1em 1.5em;
+ background: #A7B8BF;
+ color: white;
+ text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .course {
+    display: block;
   }
 
-  .header-title {
+  .course .title, .course .descrition {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .skills {
+    display: block;
+  }
+
+  .skills .column {
+    max-width: 100%;
+  }
+
+  footer {
     text-align: center;
-  }
-
-  .header-title .profile-contact {
-    text-align: left;
-  }
-
-  .header-sub-title {
-    text-align: center;
-  }
-
-  .link-title {
-    padding-bottom: 3px;
-    font-weight: 500;
-  }
-
-  .cat-title {
-    letter-spacing: 2px;
-    font-weight: 600;
-  }
-
-  .info-section .info-left {
-    border: none;
-  }
-
-  .info-section .info-right {
-    padding: 0;
-  }
-
-  .ach-item {
-    flex-direction: column;
-  }
-
-  .ach-item .ach-title {
-    width: auto;
-  }
-
-  .ach-item .ach-duration {
-    width: auto;
-    text-align: left;
-  }
-
-  .edu-header {
-    flex-direction: column;
-  }
-
-  .edu-score {
-    margin-left: 0;
-  }
-
-  .contact-section {
-    justify-content: center;
-  }
-
-  .contact-item {
-    display: inline-flex;
-    cursor: pointer;
-  }
-
-  .contact-icon {
-    min-width: 1.8rem;
-    text-align: center;
-  }
-
-  .cat-def-body,
-  .cat-skill-body {
-    padding: 0.5rem 0 0.5rem 1.4rem;
-  }
-
-  .cat-list-body {
-    padding: 2px 0 10px 0px;
-  }
-
-  .cat-skill-body-gen {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-  }
-
-  .project-link a {
-    word-wrap: break-word;
-  }
-
-  .project-desc {
-    color: #444;
-    padding: 4px 0;
   }
 }

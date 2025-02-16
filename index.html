@@ -2,8 +2,134 @@
 <html lang="en">
 
 
-    <head></head>
-    <body></body>
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Ocat</title>
+    <meta name="description" content="simple CV example created with HTML and CSS">
+    <meta name="author" content="Fly Nerd">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    
+  </head>
+  
+  <body>
+    <header>
+      
+      <h1>Charles Shields</h1>
+      <section>
+        <p>Hello! I am Charles Shields. This website is a pet project I use to learn. Building it has taught me about node.js, nginx, domains and configuring, hashing (ssh)
+            ,server security, ufw, user access (no root), permissions, proxypass, pm2, made from scratch CI/CD using git and cron, websockets, sqlite, certbot & https, http/2
+        , docker containers, load balancing & orchestration, and websockets. </p>
+        
+        <a href="https://github.com/charlesshields/" target="_blank">
+          <i class="fab fa-github-alt"></i>
+        </a>
+        <a href="https://www.instagram.com/darkiwng_chuck/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/charlesshields/" target="_blank">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </section>
+    </header>
+    <main>
+      <section>
+        <h3>Notable Projects</h3>
+        <article class='course'>
+          <div class='title'>
+            <h4>Coca Cola United "Force Shipper" Application</h4>
+          </div>
+          <div class="descrition">
+            <p>A Microsoft Azure Web Application utilizing python. It checks input data from a file dropped in blob storage and compares it to a fresh copy of company master data, and then drops a correctly formatted order in an sftp folder.</p>
+          </div>
+        </article>
+        <article class='course'>
+          <div class='title'>
+            <h4>Unit of Measure Project</h4>
+          </div>
+          <div class="descrition">
+            <p>Microsoft Document Intelligence: Custom Models. No API to gather bills from storage. Created RPA in a VM to gather bill data from over 100 different vendors utility bills and orchestrated their inestions and transformation into json.</p>
+          </div>
+        </article>
+        <article class='course'>
+          <div class='title'>
+            <h4>Product Scheduler</h4>
+          </div>
+          <div class="descrition">
+            <p></p>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h3>Skills</h3>
+        <div class='skills'>
+          <div class='column'>
+            <h4>Good knowledge</h4>
+            <ul>
+              <li>HTML5 & CSS</li>
+              <li>Python, C#</li>
+              <li>JavaScript ES5/6</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class='column'>
+            <h4>Technologies</h4>
+            <ul>
+              <li>Microsoft Azure</li>
+              <li>Azure Logic & Function Apps</li>
+              <li>Azure DevOps, Azure Data Factory, ARM templates for CI/CD</li>
+              <li>Azure SQL, Snowflake, Docker, Git</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Languages</h4>
+            <p>Southern - Accent</p>
+            <p>English - Proficient</p>
+          </div>
+        </div>
+      </section>
+  
+      <section>
+        <h3>Education</h3>
+        <article>
+          <div class='school'>
+            <span>2007-2009</span> <strong>Snead State Community College</strong>
+          </div>
+          <div class="descrition">
+            Associates in Science: Electrical Engineering
+          </div>
+        </article>
+        <article>
+          <div class='school'>
+            <span>2010-2013</span> <strong>University of Alabama at Birmingham</strong>
+          </div>
+          <div class="description">
+            Bachelors of Science: Business
+          </div>
+        </article>
+      </section>
+      <section>
+        <h3>Experience</h3>
+        <article>
+          <div class='job-title'>
+            <span>03.2018 - 06.2018</span> <strong>Coca Cola United</strong><br> <strong>Position:</strong> Call Center Agent -> Master Data Analyst -> ERP Analyst I & II -> Business Solutions Developer.
+          </div>
+          <div>
+            <p><strong>2013</strong>-2025</p>
+            <ul class="job-description">
+              <li>Did some things</li>
+              <li>For 10 years</li>
+              <li>and now I'm going to Australia.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <p>Created by: <a href="https://cshields.dev">Charles Shields</a>  / <a href="https://www.linkedin.com/in/charlesshields/">LinkedIn</a> / 2013 </p>
+    </footer>
+  </body>
 
     <script>
         let ws;
