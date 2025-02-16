@@ -1,5 +1,5 @@
 {
-  "name": "node-csdev",
+  "name": "csdev",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
