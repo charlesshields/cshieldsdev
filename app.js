@@ -6,6 +6,10 @@ app.get('/', function(req, res) {
     res.sendFile('index.html', {root: __dirname});
 });
 
+app.get('/resume.html', function(req, res) {
+    res.sendFile('resume.html', {root: __dirname});
+});
+
 server.on('request', app);
 server.listen(3000, function () { console.log('listening on port 3000'); });
 
