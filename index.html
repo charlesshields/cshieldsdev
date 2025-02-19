@@ -3,61 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Your Name</title>
+    <title>Your Name - Product Designer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            text-align: center;
-            background-color: #f4f4f4;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1a1a;
+            color: #fff;
+            overflow-x: hidden;
         }
         .container {
-            max-width: 800px;
-            margin: auto;
-            background: white;
+            max-width: 1200px;
+            margin: 0 auto;
             padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        .case-studies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+        .case-study {
+            background-color: #333;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            padding: 20px;
+            flex: 1 1 calc(33% - 40px);
+            box-sizing: border-box;
+            text-align: center;
         }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+        .case-study h2 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
         }
-        .social-links a {
-            margin: 0 10px;
+        .case-study p {
+            font-size: 1em;
+            margin: 0 0 20px;
+        }
+        .case-study a {
+            color: #ffcc00;
             text-decoration: none;
-            color: #007BFF;
+            font-weight: bold;
         }
-        .social-links a:hover {
+        .case-study a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #111;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="profile.jpg" alt="Your Name" class="profile-img">
-        <h1>Your Name</h1>
-        <p>Software Developer | Tech Enthusiast | Lifelong Learner</p>
-        <p>Welcome to my personal website! Here, you can learn more about my work, projects, and interests.</p>
-        <h2>About Me</h2>
-        <p>I am a passionate software developer with experience in web development, cloud computing, and AI technologies. I enjoy solving complex problems and building innovative solutions.</p>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="#">Project 1 - Description</a></li>
-            <li><a href="#">Project 2 - Description</a></li>
-            <li><a href="#">Project 3 - Description</a></li>
-        </ul>
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-        <p class="social-links">
-            <a href="https://linkedin.com/in/yourname">LinkedIn</a> |
-            <a href="https://github.com/yourname">GitHub</a> |
-            <a href="resume.html">Resume</a>
-        </p>
+        <header>
+            <h1>Your Name</h1>
+            <p>Designer | Developer | Innovator</p>
+        </header>
+        <section class="case-studies">
+            <div class="case-study">
+                <h2>Project One</h2>
+                <p>Brief description of Project One.</p>
+                <a href="#">View Case Study</a>
+            </div>
+            <div class="case-study">
+                <h2>Project Two</h2>
+                <p>Brief description of Project Two.</p>
+                <a href="#">View Case Study</a>
+            </div>
+            <div class="case-study">
+                <h2>Project Three</h2>
+                <p>Brief description of Project Three.</p>
+                <a href="#">View Case Study</a>
+            </div>
+        </section>
+        <footer>
+            <p>Based in Your City, Country</p>
+            <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>
+                <a href="resume.html">Resume</a> |
+                <a href="https://linkedin.com/in/yourprofile">LinkedIn</a> |
+                <a href="https://dribbble.com/yourprofile">Dribbble</a> |
+                <a href="https://github.com/yourprofile">GitHub</a>
+            </p>
+        </footer>
     </div>
 </body>
 </html>
-
-
